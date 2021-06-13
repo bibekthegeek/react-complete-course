@@ -5,7 +5,7 @@ const SimpleInput = (props) => {
 
   const [enteredName, setEnteredName] = useState("");
 
-  const nameInputChangeHnadler = (event) => {
+  const nameInputChangeHandler = (event) => {
     setEnteredName(event.target.value);
   };
 
@@ -29,7 +29,7 @@ const SimpleInput = (props) => {
           ref={userInputRef}
           type="text"
           id="name"
-          onChange={nameInputChangeHnadler}
+          onChange={nameInputChangeHandler}
           value={enteredName}
         />
       </div>
